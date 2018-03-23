@@ -2,6 +2,7 @@
 # Also, adds spots to given axis and returns matplotlib paths
 def tissot(rads_km=None, lons=None, lats=None, n_samples=80, globe=None, ax=None, draw=False, **kwargs):
     import numpy as np
+    import cartopy.crs as ccrs
     import cartopy.feature as feature
     import shapely.geometry as sgeom
     from cartopy import geodesic
